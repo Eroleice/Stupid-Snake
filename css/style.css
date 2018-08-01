@@ -1,0 +1,72 @@
+body, html{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #d1d1d1;
+    text-align: center;
+    font-family: "Microsoft YaHei",Arial,sans-serif;
+}
+
+.panel {
+    display: block;
+    height: 100%;
+}
+
+.left-panel {
+    float: left;
+}
+
+.right-panel {
+    float: right;
+    overflow-y: auto;
+}
+
+.right-panel p {
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.right-panel p:hover {
+    background: #4375ff;
+}
+
+.center-panel {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.info-panel {
+    background: #86d5ff;
+    width: 300px;
+}
+
+.canvas-panel {
+    width: 700px;
+}
+
+.canvas-panel .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.canvas-panel .subtitle {
+    color: #808080;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+canvas {
+    border: 1px solid black;
+}
