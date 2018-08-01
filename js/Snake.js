@@ -25,8 +25,9 @@ class Snake {
 
     // 爬……爬行 —— 蛇是爬行动物!
     move() {
-        this.movements += 1;
+        
         this.hunger -= 1;
+
         let newHead = {
             'x': this.body[0].x + this.direction.x,
             'y': this.body[0].y + this.direction.y
@@ -48,6 +49,8 @@ class Snake {
             this.health = 50 * this.body.length;
             population[this.num].Apple.spawn(this);
         }    
+
+        this.movements += 1;
     }
 
     // 左转

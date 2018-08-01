@@ -6,7 +6,9 @@ PG.clear();
 var play = null;
 
 for (let i = 0; i < 50; i++) {
+
     let seed = seedGen();
+
     population[i] = {
         'ID': '#' + snakeCount,
         'Seed': seed,
@@ -16,8 +18,18 @@ for (let i = 0; i < 50; i++) {
         'DNA': null,
         'fitness': 0
     };
-    document.getElementById('population-list').innerHTML += '<p class="snakes" onclick="releaseSnake(' + i + ')">' + population[i].ID + '</p>';
     snakeCount += 1;
+}
+
+for (let j = 0; j < population.length; j++) {
+
+    while (population[j].Snape.live) {
+        update(population[j], false);
+    }
+
+    population[j].fitness = population[j].Snape.movements + (population[j].Snape.body.length - 1) * 250;
+
+    document.getElementById('population-list').innerHTML += '<p class="snakes" onclick="releaseSnake(' + j + ')">' + population[j].ID + ' Fitness: ' + population[j].fitness + '.</p>';
 }
 
 function releaseSnake(num) {
@@ -36,7 +48,7 @@ function releaseSnake(num) {
 }
 
 
-function update(data) {
+function update(data, draw = true) {
     let Snape = data.Snape;
     let Apple = data.Apple;
     let NN = data.NN;
@@ -101,11 +113,14 @@ function update(data) {
         Snape.turnRight();
     }
 
-    // Ë¢ÐÂPlayGround
-    PG.clear();
-    PG.draw(Snape.body, Snape.color);
-    PG.draw([Apple.coordination], Apple.color);
-    if (!Snape.live) {
+    if (draw) {
+        // Ë¢ÐÂPlayGround
+        PG.clear();
+        PG.draw(Snape.body, Snape.color);
+        PG.draw([Apple.coordination], Apple.color);
+    }
+    
+    if (!Snape.live && play !== null) {
         clearInterval(play);
     }
 }
