@@ -3,6 +3,10 @@ Snake with Genetic Algorithm &amp; Neural Netwrok in Javascript!
 
 一个基于神经网络和遗传算法的贪食蛇AI，使用JavaScript编写的网页程序。
 
+## Demo
+Live Demo: http://lab.project-neko.com/Stupid-Snake/
+Pure Snake Game: http://lab.project-neko.com/snake/
+
 ## Feature
 Create a population pool of 50 snakes, and run them individually. Calculate fitness by movements and length. Pick 5 'good' snake and breed them (cross DNA), mutate children and run them again.
 
