@@ -123,7 +123,7 @@ class Snake {
         }
         // ×²×Ô¼º¼ì²â
         if (this.body.length > 4) {
-            for (let i = 3; i < this.body.length; i++) {
+            for (let i = 3; i < (this.body.length - 1); i++) {
                 if (hitCheck(head, this.body[i])) {
                     print('Snake hits itself, rip.');
                     return true;

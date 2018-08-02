@@ -89,3 +89,10 @@ canvas {
     background-color: #4CAF50;
     color: white;
 }
+
+textarea {
+    margin: auto;
+    margin-top: 8px;
+    width: 80%;
+    height: 200px;
+}
