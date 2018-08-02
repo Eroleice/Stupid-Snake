@@ -5,6 +5,7 @@ Snake with Genetic Algorithm &amp; Neural Netwrok in Javascript!
 
 ## Demo
 Live Demo: http://lab.project-neko.com/Stupid-Snake/
+
 Pure Snake Game: http://lab.project-neko.com/snake/
 
 ## Feature
