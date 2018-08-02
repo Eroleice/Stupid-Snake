@@ -17,9 +17,9 @@ You can click the 'Breed New Generation' button on the left. Then the browser wi
 
 你可以点击屏幕左侧的'Breed New Generation'按钮。浏览器会根据之前的50个贪食蛇AI来生成新的一组50个贪食蛇AI。这些新的AI会列举在屏幕右侧，之前的AI会被移出。
 
-You can click the 'Auto Generating' button to let browser generate new AI every 1 seconds. This would cause some lag when your snake doing good - it takes more time to simulate game. You can click the 'Stop Generating' button to stop this process.
+You can click the 'Auto Generating' button to let browser generate new AI every 3 seconds. This would cause some lag when your snake doing good - it takes more time to simulate game. You can click the 'Stop Generating' button to stop this process.
 
-你可以点击'Auto Generating'按钮来让浏览器每1秒钟自动生成新的一代AI，这个功能在AI进化后可能会导致延迟 —— 优秀的AI需要更多的时间来模拟游戏进行。你可以点击'Stope Generating'按钮来终止该进程。
+你可以点击'Auto Generating'按钮来让浏览器每3秒钟自动生成新的一代AI，这个功能在AI进化后可能会导致延迟 —— 优秀的AI需要更多的时间来模拟游戏进行。你可以点击'Stope Generating'按钮来终止该进程。
 
 By clicking 'Output Best DNA' you will get a string in the textarea, which is the 'DNA' for the best performance snake AI. You can paste another DNA in the textarea then click 'Adopt Above DNA', that DNA will be placed into one snake and used to generate new snake AI.
 
