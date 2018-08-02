@@ -339,7 +339,7 @@ function fruitAngle(Snape, Apple) {
 }
 
 function startGenLoop() {
-    loop = setInterval(newAge, 1000);
+    loop = setInterval(newAge, 3000);
 }
 
 function stopGenLoop() {
