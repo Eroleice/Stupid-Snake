@@ -270,7 +270,7 @@ function newAge(adoptDNA = null) {
         let seed = seedGen();
         let dna = parentsPool[m];
         population.push({
-            'ID': '&' + snakeCount,
+            'ID': '#' + snakeCount,
             'Seed': seed,
             'Snape': new Snake((m+40), seed),
             'Apple': new Fruit((m+40), seed),
