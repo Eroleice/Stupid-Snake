@@ -33,3 +33,41 @@ By clicking 'Output Best DNA' you will get a string in the textarea, which is th
 I, as an accounting/finance student, knew nothing about Artificial Intelligence, Machine Learning, Neural Networks, Genetic Algorithm one month before. But I did have hudge interest in these kind of technologies. Thanks to the internet I can get all the knowledge I need for this project. It's one of my dream to create an 'AI' and let it do something. Here's all the source I used/learnt for this project, all these sources are nice and I appreciate for the sharing!
 
 作为一位会计/金融学生，我在一个月前对人工智能、机器学习、神经网络、遗传算法一无所知。然而我对相关的技术十分感兴趣。感谢互联网，我可以在网上找到所有必要的知识。创造一个可以工作的AI一直是我的一个梦想。以下是我在创作过程中用/学习到的所有资料，感谢所有资料的作者的分享！
+
+* [AI learns to play snake using Genetic Algorithm and Deep learning](https://www.youtube.com/watch?v=3bhP7zulFfY) by [Code Bullet](https://www.youtube.com/channel/UC0e3QhIYukixgh5VVpKHH9Q) encouraged me 'Hey, can I also make such a thing?'
+* [Snakes, Neural Networks and Genetic Algorithms](https://www.youtube.com/watch?v=BBLJFYr7zB8) by [emgoz](https://www.youtube.com/user/OfficialMGMusic) tells me I need neural network
+* [But what *is* a Neural Network? | Deep learning, chapter 1](https://www.youtube.com/watch?v=aircAruvnKk) by [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) gives me the idea of neural network
+* [10.14: Neural Networks: Backpropagation Part 1 - The Nature of Codd](https://www.youtube.com/watch?v=QJoa0JYaX1I) by [The Coding Train](https://www.youtube.com/watch?v=QJoa0JYaX1I&t=47s) shows me how the JavaScript code looks like for neural network - thank god JS is one of the couple language I can use
+* [Fun with Neural Networks and Genetic Algorithms!](https://www.youtube.com/watch?v=7mNSY86tEFw) by [sirrandalot](https://www.youtube.com/user/sirrandalot) gives me a direct view of how genetic algorithm works with nerual network
+* [NEURAL NETWORK TO PLAY A SNAKE GAME](https://towardsdatascience.com/today-im-going-to-talk-about-a-small-practical-example-of-using-neural-networks-training-one-to-6b2cbd6efdb3) by [Slava Korolev](https://towardsdatascience.com/@korolvs?source=post_header_lockup) tells me what input I should give to my snake and what kind of actions I should expect from my snake
+* [Let’s evolve a neural network with a genetic algorithm—code included](https://blog.coast.ai/lets-evolve-a-neural-network-with-a-genetic-algorithm-code-included-8809bece164) by [Matt Harvey](https://blog.coast.ai/@harvitronix?source=post_header_lockup) gives me idea about snake with neural network
+* [GANN: Genetic algorithm neural networks for the detection of conserved combinations of features in DNA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-36) by Robert G Beiko and Robert L Charlebois tells me how to make the DNA works in genetic algorithm
+
+* [AI learns to play snake using Genetic Algorithm and Deep learning](https://www.youtube.com/watch?v=3bhP7zulFfY) by [Code Bullet](https://www.youtube.com/channel/UC0e3QhIYukixgh5VVpKHH9Q) 触动了我: "嘿,我能不能也做一个这么酷的东西出来?"
+* [Snakes, Neural Networks and Genetic Algorithms](https://www.youtube.com/watch?v=BBLJFYr7zB8) by [emgoz](https://www.youtube.com/user/OfficialMGMusic) 告诉了我贪食蛇AI可以使用神经网络
+* [But what *is* a Neural Network? | Deep learning, chapter 1](https://www.youtube.com/watch?v=aircAruvnKk) by [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) 告诉了我什么是神经网络
+* [10.14: Neural Networks: Backpropagation Part 1 - The Nature of Codd](https://www.youtube.com/watch?v=QJoa0JYaX1I) by [The Coding Train](https://www.youtube.com/watch?v=QJoa0JYaX1I&t=47s) 向我展示了神经网络相关的JavaScript代码 —— JS是我掌握的为数不多的几种编程语言之一
+* [Fun with Neural Networks and Genetic Algorithms!](https://www.youtube.com/watch?v=7mNSY86tEFw) by [sirrandalot](https://www.youtube.com/user/sirrandalot) 直观地向我展示了遗传算法如何应用于神经网络
+* [NEURAL NETWORK TO PLAY A SNAKE GAME](https://towardsdatascience.com/today-im-going-to-talk-about-a-small-practical-example-of-using-neural-networks-training-one-to-6b2cbd6efdb3) by [Slava Korolev](https://towardsdatascience.com/@korolvs?source=post_header_lockup) 告诉了我贪食蛇AI的神经网路可以使用怎样的输入数据，以及贪食蛇的行为应该是怎样的
+* [Let’s evolve a neural network with a genetic algorithm—code included](https://blog.coast.ai/lets-evolve-a-neural-network-with-a-genetic-algorithm-code-included-8809bece164) by [Matt Harvey](https://blog.coast.ai/@harvitronix?source=post_header_lockup) 给了我一些关于贪食蛇AI的点子
+* [GANN: Genetic algorithm neural networks for the detection of conserved combinations of features in DNA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-36) by Robert G Beiko and Robert L Charlebois 教会了我如何具体操作遗传算法中的DNA
+
+## Final words
+It's so nice to see the program finally workes as expected. I've been working on this thing for nearly one and half week. Before doing it I didn't even believe I can finish it.
+
+能够看到这个程序如预期一样运行我十分开心。我在这个程序上一共花费了大约一周半的时间，在此之前我甚至无法相信我最终可以完成这个程序。
+
+I re-wrote this program couple times, with either NodeJS or browser. Before today, I never get my Genetic Algorithm module function well - those snakes never got clever.
+
+我多次在NodeJS或浏览器上重写了这个程序。在今天之前，我从来没有让遗传算法模块正常工作过 - 所有的AI从来不会变得更聪明。
+
+It's the most exciting moment when today I finally see the fitness jumped from 50 to 200-ish and immediately break 1k. I knew it's done.
+
+今天当我看到适应度从50突然跳到200多，并且迅速突破1000时，是我这几天最激动的时刻。我知道我成功了。
+
+So this is it. I succeed.
+
+就是这样，我成功了。
+
+## License
+MIT
