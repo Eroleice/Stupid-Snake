@@ -10,8 +10,24 @@ class Snake {
         Math.seedrandom(this.seed + this.num);
         this.body = [
             {
-                'x': Math.floor(Math.random() * this.width),
-                'y': Math.floor(Math.random() * this.height)
+                'x': 13,
+                'y': 13
+            },
+            {
+                'x': 12,
+                'y': 13
+            },
+            {
+                'x': 11,
+                'y': 13
+            },
+            {
+                'x': 10,
+                'y': 13
+            },
+            {
+                'x': 9,
+                'y': 13
             }
         ];
         this.direction = {
@@ -19,6 +35,7 @@ class Snake {
             'y': 0
         };
         this.movements = 0;
+        this.path = [this.body[0]];
 
         print('New snake generated at ' + JSON.stringify(this.body[0]) + '.');
     }
@@ -40,15 +57,16 @@ class Snake {
         }
 
         this.body.unshift(newHead);
+        this.path.push(newHead);
         print('Snake moves to ' + JSON.stringify(newHead) + '. Hunger left: ' + this.hunger + '.');
 
         // ³ÔÆ»¹û¼ì²â
         if (!hitCheck(newHead, population[this.num].Apple.coordination)) {
             this.body.pop();
         } else {
-            this.health = 50 * this.body.length;
-            population[this.num].Apple.spawn(this);
-        }    
+            this.hunger = 25 + 25 * this.body.length;
+            population[this.num].Apple.spawn();
+        }
 
         this.movements += 1;
     }
@@ -105,7 +123,7 @@ class Snake {
         }
         // ×²×Ô¼º¼ì²â
         if (this.body.length > 4) {
-            for (let i = 4; i < this.body.length; i++) {
+            for (let i = 3; i < this.body.length; i++) {
                 if (hitCheck(head, this.body[i])) {
                     print('Snake hits itself, rip.');
                     return true;
@@ -127,8 +145,24 @@ class Snake {
         Math.seedrandom(this.seed + this.num);
         this.body = [
             {
-                'x': Math.floor(Math.random() * this.width),
-                'y': Math.floor(Math.random() * this.height)
+                'x': 13,
+                'y': 13
+            },
+            {
+                'x': 12,
+                'y': 13
+            },
+            {
+                'x': 11,
+                'y': 13
+            },
+            {
+                'x': 10,
+                'y': 13
+            },
+            {
+                'x': 9,
+                'y': 13
             }
         ];
         this.direction = {
@@ -136,6 +170,7 @@ class Snake {
             'y': 0
         };
         this.movements = 0;
+        this.path = [];
 
         print('New snake generated at ' + JSON.stringify(this.body[0]) + '.');
     }

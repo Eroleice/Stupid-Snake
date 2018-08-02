@@ -1,5 +1,5 @@
 class NeuralNetwork {
-    constructor(inputNodes, hiddenNodes, outputNodes) {
+    constructor(inputNodes, hiddenNodes, outputNodes, dna = null) {
         this.inputNodes = inputNodes;
         this.hiddenNodes = hiddenNodes;
         this.outputNodes = outputNodes;
@@ -19,6 +19,10 @@ class NeuralNetwork {
         };
         this.bias.h.randomize();
         this.bias.o.randomize();
+
+        if (dna !== null) {
+            this.applyDNA(dna);
+        }
     }
 
     feedForward(arr) {
@@ -43,9 +47,22 @@ class NeuralNetwork {
     applyDNA(DNA) {
         let data = JSON.parse(DNA);
         this.weights.ih = Matrix.fromObj(data[0][0]);
-        this.weights.ho = data[0][1];
-        this.bias.h = data[1][0];
-        this.bias.o = data[1][1];
+        this.weights.ho = Matrix.fromObj(data[0][1]);
+        this.bias.h = Matrix.fromObj(data[1][0]);
+        this.bias.o = Matrix.fromObj(data[1][1]);
+    }
+
+    printDNA() {
+        let dna = [[], []];
+        dna[0] = [
+            this.weights.ih.data,
+            this.weights.ho.data
+        ];
+        dna[1] = [
+            this.bias.h.data,
+            this.bias.o.data
+        ];
+        return JSON.stringify(dna);
     }
 }
 

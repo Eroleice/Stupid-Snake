@@ -24,7 +24,7 @@ class Matrix {
         let m = new Matrix(obj.length, obj[0].length);
         for (let i = 0; i < m.rows; i++) {
             for (let j = 0; j < m.cols; j++) {
-                m.obj[i][j] = obj[i][j];
+                m.data[i][j] = obj[i][j];
             }
         }
         return m;
