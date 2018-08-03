@@ -10,7 +10,7 @@ class Fruit {
             'y': null
         };
         this.color = '#ff3636';
-        this.path = [];
+        // this.path = [];
     }
 
     spawn() {
@@ -33,7 +33,7 @@ class Fruit {
         Math.seedrandom();
         this.attempt += 1;
         this.coordination = newFruit;
-        this.path.push(newFruit);
+        // this.path.push(newFruit);
         print('New fruit generated at ' + JSON.stringify(newFruit) + '.');
     }
 
@@ -43,7 +43,7 @@ class Fruit {
             'x': null,
             'y': null
         };
-        this.path = [];
+        // this.path = [];
         this.spawn();
     }
 }

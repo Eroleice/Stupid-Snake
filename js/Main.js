@@ -50,8 +50,8 @@ for (let j = 0; j < population.length; j++) {
     }
 
     population[j].fitness = population[j].Snape.movements + (population[j].Snape.body.length - 5) * 250;
-    population[j].path.Snape = JSON.parse(JSON.stringify(population[j].Snape.path));
-    population[j].path.Apple = JSON.parse(JSON.stringify(population[j].Apple.path));
+    // population[j].path.Snape = JSON.parse(JSON.stringify(population[j].Snape.path));
+    // population[j].path.Apple = JSON.parse(JSON.stringify(population[j].Apple.path));
 
     document.getElementById('population-list').innerHTML += '<p class="snakes" onclick="releaseSnake(' + j + ')">' + population[j].ID + ' Fitness: ' + population[j].fitness + '.</p>';
 }
@@ -318,8 +318,8 @@ function newAge(adoptDNA = null) {
         }
 
         population[j].fitness = population[j].Snape.movements + (population[j].Snape.body.length - 5) * 250;
-        population[j].path.Snape = JSON.parse(JSON.stringify(population[j].Snape.path));
-        population[j].path.Apple = JSON.parse(JSON.stringify(population[j].Apple.path));
+        // population[j].path.Snape = JSON.parse(JSON.stringify(population[j].Snape.path));
+        // population[j].path.Apple = JSON.parse(JSON.stringify(population[j].Apple.path));
 
         document.getElementById('population-list').innerHTML += '<p class="snakes" onclick="releaseSnake(' + j + ')">' + population[j].ID + ' Fitness: ' + population[j].fitness + '.</p>';
     }

@@ -35,7 +35,7 @@ class Snake {
             'y': 0
         };
         this.movements = 0;
-        this.path = [this.body[0]];
+        // this.path = [this.body[0]];
 
         print('New snake generated at ' + JSON.stringify(this.body[0]) + '.');
     }
@@ -57,7 +57,7 @@ class Snake {
         }
 
         this.body.unshift(newHead);
-        this.path.push(newHead);
+        // this.path.push(newHead);
         print('Snake moves to ' + JSON.stringify(newHead) + '. Hunger left: ' + this.hunger + '.');
 
         // ³ÔÆ»¹û¼ì²â
@@ -170,7 +170,7 @@ class Snake {
             'y': 0
         };
         this.movements = 0;
-        this.path = [];
+        // this.path = [];
 
         print('New snake generated at ' + JSON.stringify(this.body[0]) + '.');
     }
