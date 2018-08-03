@@ -30,5 +30,15 @@ class PlayGround {
         for (let i = 0; i < arr.length; i++) {
             this.fillSquare(arr[i].x, arr[i].y, color);
         }
+        for (let x = 0.5; x < this.canvas.width; x += this.cellSize) {
+            this.ctx.moveTo(x, 0);
+            this.ctx.lineTo(x, this.canvas.height);
+        }
+        for (let y = 0.5; y < this.canvas.height; y += this.cellSize) {
+            this.ctx.moveTo(0, y);
+            this.ctx.lineTo(this.canvas.width, y);
+        }
+
+        this.ctx.stroke();
     }
 }

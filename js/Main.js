@@ -8,7 +8,7 @@ var bestSnake = {
 };
 var DNAPool = [];
 var parentsPool = [];
-var frame = 10;
+var frame = 30;
 var bestDNA = '';
 var loop;
 var isPause = false;
