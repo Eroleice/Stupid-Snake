@@ -188,17 +188,17 @@ function chooseParents(population) {
     });
     bestDNA = population[0].DNA;
     let perfect = [];
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 5; i++) {
         perfect[i] = population[0].DNA;
         population.shift();
     }
     let excellent = [];
-    for (let j = 0; j < 8; j++) {
+    for (let j = 0; j < 10; j++) {
         excellent[j] = population[0].DNA;
         population.shift();
     }
     let good = [];
-    for (let k = 0; k < 15; k++) {
+    for (let k = 0; k < 10; k++) {
         good[k] = population[0].DNA;
         population.shift();
     }
