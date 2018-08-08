@@ -1,3 +1,5 @@
+// This is a branch of Stupid Snake. This AI has a sight range of 2 on left, right and front!
+
 var population = [];
 var snakeCount = 1;
 var age = 0;
